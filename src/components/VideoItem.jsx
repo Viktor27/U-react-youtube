@@ -1,7 +1,7 @@
-import React from 'react';
-import './VideoItem.css';
-
+import React from "react";
+import "./VideoItem.css";
 const VideoItem = ({ video, onVideoSelect }) => {
+  // console.log(video, "💩");
   return (
     <div className="video-item item" onClick={() => onVideoSelect(video)}>
       <img
@@ -10,7 +10,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
         alt={video.snippet.description}
       />
       <div className="content">
-        <h2 className="header">{video.snippet.title}</h2>
+        <h3 className="header">{video.snippet.title}</h3>
       </div>
     </div>
   );

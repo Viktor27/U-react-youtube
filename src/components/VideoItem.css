@@ -4,6 +4,16 @@
   cursor: pointer;
 }
 .video-item img {
-  max-width: 150px;
+  max-width: 150px !important;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .video-item {
+    flex-wrap: wrap;
+  }
+  .video-item img {
+    max-width: 100% !important;
+    object-fit: cover;
+  }
 }
